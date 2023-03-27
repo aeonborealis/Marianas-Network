@@ -1,0 +1,31 @@
+Sure, here are the steps for installing CJDNS on macOS:
+
+Install Homebrew, a popular package manager for macOS, by running the following command in your terminal:
+bash
+Copy code
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+Install the dependencies required for CJDNS by running the following command:
+Copy code
+brew install nodejs libsodium
+Download the latest release of CJDNS from its GitHub repository. You can do this by navigating to the releases page (https://github.com/cjdelisle/cjdns/releases) and downloading the appropriate binary for your macOS version.
+
+Extract the downloaded archive by running the following command:
+
+Copy code
+tar -xvf cjdns-x.y.z.tar.gz
+Navigate to the extracted directory by running the following command:
+bash
+Copy code
+cd cjdns-x.y.z
+Start CJDNS by running the following command:
+bash
+Copy code
+./cjdroute
+Note: By default, CJDNS will not run as a daemon, so it will continue running in the foreground. If you want to run it in the background, you can append the '&' character to the end of the command, like this:
+
+bash
+Copy code
+./cjdroute &
+This will start CJDNS in the background and return you to the command prompt.
+
+That's it! CJDNS should now be installed and running on your macOS system.
